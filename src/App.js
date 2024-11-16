@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import LandingPage from './components/LandingPage';
 import './App.css';
 
-function App() {
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+
+export default function App({ Component, pageProps }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PrimeReactProvider>
+      <div className="App">
+        <LandingPage />
+      </div>
+    </PrimeReactProvider>
   );
 }
 
-export default App;

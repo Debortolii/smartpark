@@ -1,0 +1,149 @@
+/* Estilo principal da Landing Page */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+
+.landing {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: serif;
+}
+
+/* Divisão esquerda - Laranja */
+.landing-left {
+  flex: 1; /* Ocupa 50% do espaço horizontal */
+  background: linear-gradient(#f44e4e, #ff914d); /* Gradiente laranja */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  
+}
+
+.landing-right {
+  flex: 1; /* Ocupa metade da largura */
+  background-color: white; /* Fundo branco */
+  color: #333; /* Cor do texto */
+  display: flex;
+  flex-direction: column; /* Empilha os elementos */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  padding: 2rem; /* Espaçamento interno */
+}
+
+.landing-logo {
+  width: 50%; /* Largura da logo */
+  height: auto; /* Mantém a proporção */
+  margin-bottom: 2rem; /* Espaçamento abaixo da logo */
+}
+
+.landing-description {
+  font-size: 1.2rem; /* Tamanho do texto */
+  max-width: 600px; /* Limita a largura do texto */
+  margin: 0 auto; /* Centraliza horizontalmente o texto */
+  font-family: 'League Spartan', serif;
+}
+
+/* Estilo do título */
+.landing-left h1, .landing-right h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-family: 'League Spartan', serif;
+  text-transform: uppercase;
+  display: block; /* Coloca o texto em bloco para ficar um embaixo do outro */
+  text-align: left; /* Centraliza o texto na seção */
+  color: white;
+  line-height: 0.9; /* Ajusta o espaçamento entre as linhas */
+  font-size: 10rem;
+}
+
+/* Estilo do parágrafo */
+.landing-left p, .landing-right p {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+.landing-left h1 .outline {
+  font-size: 10rem; /* Certifique-se de que o tamanho do outline é proporcional */
+  color: transparent;
+  -webkit-text-stroke: 2px white; /* Contorno branco */
+  text-stroke: 2px white;
+}
+/* Estilo do botão de chamada para ação */
+.cta-button {
+  background-color: #333; /* Cor escura */
+  color: #fff; /* Cor do texto */
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555; /* Cor mais clara no hover */
+}
+
+/* Estilo da seção de funcionalidades */
+.features {
+  padding: 7rem 1rem; /* Padding da seção */
+  background-color: #350d0d; /* Cor de fundo escura (marrom/vermelho escuro) */
+}
+
+/* Título das funcionalidades */
+.features h2 {
+  font-size: 5rem; /* Tamanho grande para o título das funcionalidades */
+  margin-bottom: 5rem; /* Espaçamento grande abaixo do título */
+}
+
+/* Estilo da lista de itens de funcionalidades */
+.feature-list {
+  display: flex; /* Exibe os itens como flexbox */
+  justify-content: center; /* Centraliza os itens */
+  gap: 1.5rem; /* Espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas, se necessário */
+}
+
+/* Estilo de cada item de funcionalidade */
+.feature-item {
+  background: #000000; /* Cor de fundo preta para cada item */
+  border: 1px solid #ddd; /* Borda clara em torno de cada item */
+  border-radius: 13px; /* Bordas arredondadas */
+  padding: 1.5rem; /* Padding interno */
+  width: 200; /* Largura fixa para cada item */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2), 4px 8px 16px rgba(0, 0, 0, 0.15); /* Sombra suave ao redor dos itens */
+  text-align: center; /* Alinha o texto ao centro */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombra */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do item */
+}
+
+/* Efeito ao passar o mouse sobre o item de funcionalidade */
+.feature-item:hover {
+  transform: translateY(1.5); /* Move o item para cima (efeito de elevação) */
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3), 6px 12px 24px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo do título de cada item de funcionalidade */
+.feature-item h3 {
+  color: #8415ce; /* Cor do título - tom de roxo escuro */
+  margin-bottom: 1.5rem; /* Margem abaixo do título */
+  box-shadow: 2px 6px 12px rgba(44, 43, 43, 0.2); /* Sombra suave no título */
+}
+
+/* Estilo da seção "sobre" */
+.about {
+  padding: 2rem 1rem; /* Padding para espaçar o conteúdo */
+}
+
+/* Estilo do rodapé */
+.footer {
+  background-color: #0f0cb3; /* Cor de fundo azul escuro */
+  color: rgb(52, 60, 165); /* Cor do texto azul mais claro */
+  padding: 1rem; /* Padding do rodapé */
+  font-size: 0.9rem; /* Tamanho de fonte menor para o rodapé */
+}
