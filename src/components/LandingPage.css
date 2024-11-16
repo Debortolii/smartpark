@@ -70,7 +70,6 @@
   font-size: 10rem; /* Certifique-se de que o tamanho do outline é proporcional */
   color: transparent;
   -webkit-text-stroke: 2px white; /* Contorno branco */
-  text-stroke: 2px white;
 }
 /* Estilo do botão de chamada para ação */
 .cta-button {
@@ -86,64 +85,93 @@
 }
 
 .cta-button:hover {
-  background-color: #555; /* Cor mais clara no hover */
+  background-color: #696969; /* Cor mais clara no hover */
 }
+
 
 /* Estilo da seção de funcionalidades */
 .features {
-  padding: 7rem 1rem; /* Padding da seção */
-  background-color: #350d0d; /* Cor de fundo escura (marrom/vermelho escuro) */
+  background-color: #d8d4d1; /* Cor de fundo escura (marrom/vermelho escuro) */
+  padding-bottom: 7rem;
 }
 
 /* Título das funcionalidades */
 .features h2 {
+  font-family: 'League Spartan', serif;
+  text-transform: uppercase;
   font-size: 5rem; /* Tamanho grande para o título das funcionalidades */
-  margin-bottom: 5rem; /* Espaçamento grande abaixo do título */
+  margin-bottom: 5rem; /* Espaçamento abaixo do título */
+  padding-top: 5rem; /* Ajuste o valor conforme necessário */
+  padding-bottom: 5rem; /* Ajuste o valor conforme necessário */
+  text-align: center; /* Centraliza o texto */
+  margin: 0 auto; /* Garante que o título seja centralizado horizontalmente */
+  color: #000000;
 }
 
 /* Estilo da lista de itens de funcionalidades */
 .feature-list {
   display: flex; /* Exibe os itens como flexbox */
   justify-content: center; /* Centraliza os itens */
-  gap: 1.5rem; /* Espaçamento entre os itens */
+  gap: 2rem; /* Espaçamento entre os itens */
   flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas, se necessário */
+  align-items: center;
+  width: 100%; /* Garante que a lista ocupe toda a largura */
+  padding: 2rem 0; /* Padding para dar um espaço no topo e na base */
 }
 
 /* Estilo de cada item de funcionalidade */
-.feature-item {
-  background: #000000; /* Cor de fundo preta para cada item */
-  border: 1px solid #ddd; /* Borda clara em torno de cada item */
-  border-radius: 13px; /* Bordas arredondadas */
-  padding: 1.5rem; /* Padding interno */
-  width: 200; /* Largura fixa para cada item */
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2), 4px 8px 16px rgba(0, 0, 0, 0.15); /* Sombra suave ao redor dos itens */
-  text-align: center; /* Alinha o texto ao centro */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombra */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do item */
+.feature-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px; /* Limita a largura do card */
+  margin: 0 auto; /* Garante que o card fique centralizado */
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 450px; /* Largura fixa */
+  height: 300px; /* Altura fixa */
+  border-radius: 20px;
+}
+
+.feature-card p {
+  font-size: 20px; /* Tamanho menor para o texto */
+  overflow: hidden; /* Oculta o excesso de texto */
+  text-overflow: ellipsis; /* Adiciona reticências para texto longo */
+  display: -webkit-box; /* Permite truncar em múltiplas linhas */
+  -webkit-line-clamp: 10; /* Limita o texto a 3 linhas */
+  -webkit-box-orient: vertical; /* Define a orientação do box */
+  text-align: center;
+}
+.feature-card .p-card-title {
+  font-size: 36px; /* Tamanho do título */
+  font-weight: 700; /* Peso da fonte (opcional) */
+  color: #333; /* Cor do título */
+  text-align: center;
+  margin-bottom: -2rem; /* Ajuste o valor conforme necessário */
 }
 
 /* Efeito ao passar o mouse sobre o item de funcionalidade */
 .feature-item:hover {
   transform: translateY(1.5); /* Move o item para cima (efeito de elevação) */
-  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3), 6px 12px 24px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
 }
 
 /* Estilo do título de cada item de funcionalidade */
 .feature-item h3 {
-  color: #8415ce; /* Cor do título - tom de roxo escuro */
+  color: #12d85e; /* Cor do título - tom de roxo escuro */
   margin-bottom: 1.5rem; /* Margem abaixo do título */
   box-shadow: 2px 6px 12px rgba(44, 43, 43, 0.2); /* Sombra suave no título */
 }
 
 /* Estilo da seção "sobre" */
 .about {
-  padding: 2rem 1rem; /* Padding para espaçar o conteúdo */
+  padding: 0.2rem 1rem; /* Padding para espaçar o conteúdo */
 }
 
 /* Estilo do rodapé */
 .footer {
-  background-color: #0f0cb3; /* Cor de fundo azul escuro */
-  color: rgb(52, 60, 165); /* Cor do texto azul mais claro */
+  background-color: #1d1d1f; /* Cor de fundo azul escuro */
+  color: rgb(255, 255, 255); /* Cor do texto azul mais claro */
   padding: 1rem; /* Padding do rodapé */
   font-size: 0.9rem; /* Tamanho de fonte menor para o rodapé */
 }
