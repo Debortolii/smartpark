@@ -58,9 +58,9 @@
   }
 
   .feature-card {
-    max-width: 250px !important;
-    padding-bottom: 30px;
-    margin: 0 auto;
+    max-width: 280px !important;
+    padding-left: 0px;
+    margin: 0 auto !important;
   }
 
   .feature-card .p-card-title {
@@ -71,14 +71,30 @@
 
   .footer {
     font-size: 0.9rem !important;
-    text-align: center;
-    padding: 1rem;
+    text-align: center !important;
+    padding: 1rem !important;
   }
 
   .feature-card p {
-    font-size: 1rem !important;
-    text-align: center;
+    font-size: 0.9rem !important; /* Reduz o tamanho do texto */
+    width: 17rem !important; /* Remove a largura fixa */
+    padding: 0rem; /* Adiciona espaço interno */
+    line-height: 1.4 !important; /* Ajusta o espaçamento entre linhas */
   }
+  
+
+  
+.feature-card .card {
+  background-color: rgb(255, 255, 255) !important;
+  width: 100% !important; /* O cartão ocupará 90% da largura disponível */
+  max-width: 400px !important; /* Expande o limite máximo da largura */
+  height: auto; /* Ajusta a altura dinamicamente */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 20px !important;
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+  margin: 0 auto; /* Centraliza o card */
+}
+
 }
 
 .landing {
@@ -180,11 +196,26 @@
   margin: 0 auto;
   color: #000000;
 }
+/* Estilo da lista de itens de funcionalidades */
+.feature-list {
+  display: flex; /* Exibe os itens como flexbox */
+  justify-content: center; /* Centraliza os itens */
+  gap: 2rem; /* Espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas, se necessário */
+  align-items: center;
+  width: 100%; /* Garante que a lista ocupe toda a largura */
+  padding: 2rem 0; /* Padding para dar um espaço no topo e na base */
+}
 
 .feature-card .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px; /* Limita a largura do card */
+  margin: 0 auto; 
   background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: auto;
+  width: 450px; /* Largura fixa */
+  height: 300px; /* Altura fixa */
   border-radius: 20px;
 }
 
@@ -196,6 +227,7 @@
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   text-align: center;
+  width: 450px;
 }
 
 .feature-card .p-card-title {
