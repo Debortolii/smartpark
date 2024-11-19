@@ -4,7 +4,6 @@ import { Carousel } from 'primereact/carousel'; // Importando o Carousel
 import { Card } from 'primereact/card'; // Importando o Card do PrimeReact
 import 'primereact/resources/themes/lara-light-indigo/theme.css'; // Tema do PrimeReact
 import 'primereact/resources/primereact.min.css'; // Estilos do PrimeReact
-import { Avatar } from 'primereact/avatar';
 
 const LandingPage = () => {
 
@@ -22,17 +21,17 @@ const LandingPage = () => {
 
   const responsiveOptions = [
     {
-      breakpoint: '1024px', // Para telas maiores que 1024px
+      breakpoint: '1024px',
       numVisible: 3,
       numScroll: 3,
     },
     {
-      breakpoint: '768px', // Para telas entre 768px e 1024px
+      breakpoint: '768px',
       numVisible: 2,
       numScroll: 2,
     },
     {
-      breakpoint: '560px', // Para telas menores que 768px
+      breakpoint: '560px',
       numVisible: 1,
       numScroll: 1,
     },
