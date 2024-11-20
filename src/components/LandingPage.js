@@ -2,9 +2,9 @@ import React from 'react';
 import './LandingPage.css';
 import { Carousel } from 'primereact/carousel'; // Importando o Carousel
 import { Card } from 'primereact/card'; // Importando o Card do PrimeReact
+import { Avatar } from 'primereact/avatar'; // Importando o Avatar
 import 'primereact/resources/themes/lara-light-indigo/theme.css'; // Tema do PrimeReact
 import 'primereact/resources/primereact.min.css'; // Estilos do PrimeReact
-import { Avatar } from 'primereact/avatar';
 
 const LandingPage = () => {
 
@@ -22,17 +22,17 @@ const LandingPage = () => {
 
   const responsiveOptions = [
     {
-      breakpoint: '1024px', // Para telas maiores que 1024px
+      breakpoint: '1024px',
       numVisible: 3,
       numScroll: 3,
     },
     {
-      breakpoint: '768px', // Para telas entre 768px e 1024px
+      breakpoint: '768px',
       numVisible: 2,
       numScroll: 2,
     },
     {
-      breakpoint: '560px', // Para telas menores que 768px
+      breakpoint: '560px',
       numVisible: 1,
       numScroll: 1,
     },
@@ -50,6 +50,13 @@ const LandingPage = () => {
       </div>
     );
   };
+
+  const teamMembers = [
+    { name: "Ana Goldner", img: "/aninha.png" },
+    { name: "Júlia Debortoli", img: "/julia1.jpeg" },
+    { name: "Maria Clara Pereira", img: "/maria1.jpeg" },
+    { name: "Talys Zani", img: "/talys.jpeg" },
+  ];
 
   return (
     <div>
@@ -83,6 +90,19 @@ const LandingPage = () => {
           autoplayInterval={5000}
           itemTemplate={featureTemplate}
         />
+      </section>
+
+      {/* Seção de Participantes/Equipe */}
+      <section className="team">
+        <h2>Participantes</h2>
+        <div className="team-members">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-member">
+              <Avatar image={member.img} size="xlarge" shape="circle" className="custom-avatar"/>
+              <p>{member.name}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="about">
